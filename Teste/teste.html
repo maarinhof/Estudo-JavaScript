@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Página de Testes</title>
+     <!-- Metas --> 
+    <meta charset="UTF-8">
+    <!-- Link --> 
+    <link rel="stylesheet" href="_css/animate.css">
+    <link rel="stylesheet" href="_css/bootstrap-grid.css">
+    <link rel="stylesheet" href="_css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="_css/bootstrap.css">
+    <link rel="stylesheet" href="_css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+               CALCULE AS ÁRES DO QUADRADO 
+               <!-- digite o valor da área --> 
+                <form>
+                   
+                    <div class="form-group">
+                        <input type="area" class="form-control form-control-sm" placeholder="Digite o valor da área 1" id="l1">
+                        <input type="area" class="form-control form-control-sm" placeholder="Digite o valor da área 2" id="l2">
+                        
+                        <div class="btn-submit text-center"> <br>
+                           
+                            <!-- butão --> 
+                            <button type="button" class="btn btn-danger" id="button">
+                                Envie seus Valores
+                            </button>
+                        </div>
+                    </div>
+                    
+                </form>
+                
+                <!-- Resultado --> 
+                <form>
+                   
+                   <div class="form-group">
+                       <p id="valordaarea" class="text-center"></p>
+                   </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div> <!-- Area Quadrado --> 
+    <!-- CALCULADORA --> 
+    <div class="container">
+         <form action="" class="calculadora col-lg-5" method="post" name="calculadora">
+             <div class="row">
+                 <div class="col-12 col-lg-12">
+                     <input type="text" class="form-control form-control-lg visorMaster" name="visor">
+                 </div>
+             </div>
+             
+             <!-- PRIMEIRA LINHA --> 
+             <div class="row">
+                 <div class="col-9 col-lg-9 text-center">
+                    <!-- PRIMEIRA LINHA --> 
+                     <input type="button" class="btn btn-dark btn-primeiralinha" value="AC" onclick="limpar()">
+                     <input type="button" class="btn btn-dark btn-primeiralinha" value="+/-" onclick="num(value)">
+                     <input type="button" class="btn btn-dark btn-primeiralinha" value="%" onclick="num(value)">
+                     <br>
+                    <!-- SEGUNDA LINHA --> 
+                     <input type="button" class="btn btn-dark btn-segundalinha" value="7" onclick="num(value)">
+                     <input type="button" class="btn btn-dark btn-segundalinha" value="8" onclick="num(value)">
+                     <input type="button" class="btn btn-dark btn-segundalinha" value="9" onclick="num(value)">
+                     <br>
+                     <!-- TERCEIRA LINHA --> 
+                     <input type="button" class="btn btn-dark btn-terceiralinha" value="4" onclick="num(value)">
+                     <input type="button" class="btn btn-dark btn-terceiralinha" value="5" onclick="num(value)">
+                     <input type="button" class="btn btn-dark btn-terceiralinha" value="6" onclick="num(value)">
+                     <br>
+                     <!-- QUARTA LINHA --> 
+                     <input type="button" class="btn btn-dark btn-quartalinha" value="1" onclick="num(value)">
+                     <input type="button" class="btn btn-dark btn-quartalinha" value="2" onclick="num(value)">
+                     <input type="button" class="btn btn-dark btn-quartalinha" value="3" onclick="num(value)">
+                     <br>
+                     <!-- QUINTA LINHA --> 
+                     <input type="button" class="btn btn-dark btn-zero" value="0" onclick="num(value)">
+                     <input type="button" class="btn btn-dark btn-ponto" value="." onclick="num(value)">
+                 </div>
+                 <!-- OPERADORES --> 
+                 <div class="col-2 col-lg-1  text-center">
+                     <input type="button" class="btn btn-success btn-operadores" value="/" onclick="num(value)">
+                     <input type="button" class="btn btn-success btn-operadores" value="*" onclick="num(value)">
+                     <input type="button" class="btn btn-success btn-operadores" value="-" onclick="num(value)">
+                     <input type="button" class="btn btn-success btn-operadores" value="+" onclick="num(value)">
+                     <input type="button" class="btn btn-success btn-operadores" value="=" onclick="calcular()">
+                 </div>
+             </div>
+         </form>
+    </div>
+<!-- JavaScript -->     
+<script src="_js/index.js"></script>
+</body>
+</html>
